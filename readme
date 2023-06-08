@@ -1,1 +1,39 @@
 # PYTHON AI CHATBOT BUILT ON TOP OF FLASK
+
+# Python Version
+## #############3.9.16 ###############
+
+# How to use it
+-Clone this projcet to your local PC
+-Create a seperate python environment either on conda or other tool of your choice
+-Install python 3.9.16
+-Install All Libraries below
+-Run your project 
+-you will be connected to the PI http://127.0.0.1:5000/talktome
+
+# How to use the API
+-The API can be connected to a web App, mobile App, or on whatsapp
+
+# Libraries used  -----------------------------------
+# from flask 
+-Flask
+-redirect
+-url_for
+-request
+-jsonify
+-json
+-CORS
+
+# nltk
+# pickle
+# numpy
+# wikipedia
+
+# PYTHON
+json
+random
+
+datetime
+time
+
+# ---------------------------------------------------
