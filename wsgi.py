@@ -15,6 +15,7 @@ classes = pickle.load(open('classes.pkl','rb'))
 import wikipedia
 import datetime
 import time
+import re
 app = Flask(__name__)
 CORS(app)
 
@@ -52,11 +53,25 @@ def predict_class(sentence, model):
 def getResponse(ints, intents_json,msg):
     list_of_intents = intents_json['intents']
     
-    if (float(ints[0]['probability']) > 0.95):
+    if (float(ints[0]['probability']) > 0.85):
         tag = ints[0]['intent']
         result = ""
         if (tag=="datetime"):
             result = time.strftime("%A") + time.strftime("%d %B %Y")+time.strftime("%H:%M:%S")
+        elif (tag=="math"):
+            match = re.search(r'(\d+)\s*(\+|\-|\*|\/)\s*(\d+)', msg)
+            if match:
+                num1 = int(match.group(1))
+                operator = match.group(2)
+                num2 = int(match.group(3))
+                if operator == '*':
+                    result = str(num1 * num2)
+                elif operator == '/':
+                    result = str(num1 / num2)
+                elif operator == '+':
+                    result = str(num1 + num2)
+                elif operator == '-':
+                    result = str(num1 - num2)
         else:
             for i in list_of_intents:
                 if(i['tag']== tag):
@@ -92,7 +107,8 @@ def getResponse(ints, intents_json,msg):
             for i in list_of_intents:
                 if(i['tag']== tag):
                     result = random.choice(i['responses'])
-                    break        
+                    break   
+        print(f"Selected class: {tag}, Probability: {ints[0]['probability']}")     
     return result
 
 def chatbot_response(msg):
@@ -101,7 +117,8 @@ def chatbot_response(msg):
         res = getResponse(ints, intents, msg)
         return res
     except IndexError:
-        return "I'm sorry, I didn't understand what you said. Please try again with a different message."
+        # return ""
+        return "I'm sorry, I didn't understand what you said. Please try again."
 
 @app.route('/talktome',methods=["POST","GET"])
 def talktome():
@@ -110,11 +127,12 @@ def talktome():
     
     message = chatbot_response(data['message'])
     current_time = datetime.datetime.now().strftime("%H:%M:%S")
-    response_dict = {
-        "type": "bot",
-        "time": current_time,
-        "message": message
-    }
+    response_dict = {"message":message}
+    # response_dict = {
+    #     "type": "bot",
+    #     "time": current_time,
+    #     "message": message
+    # }
     
     return jsonify(response_dict)
 

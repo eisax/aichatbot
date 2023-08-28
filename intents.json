@@ -4,9 +4,7 @@
             "tag": "noanswer",
             "patterns": [],
             "responses": [
-                "Sorry, can't understand you can you try to ask in a different way",
-                "Please give me more info, I couldn't understand",
-                "Not sure I understand"
+                ""
             ],
             "context": [
                 ""
@@ -16,7 +14,7 @@
             "tag": "ai1",
             "patterns": [
                 "What is ai",
-                "What is artificil inteligence"
+                "What is artificail inteligence"
             ],
             "responses": [
                 "Artificial intelligence is the branch of engineering and science devoted to constructing machines that think."
@@ -874,7 +872,8 @@
                 "Hi, How is it going?",
                 "Hello, How are you doing?",
                 "Hey, How is it?",
-                "Greetings!"
+                "Greetings!",
+                "how are you"
             ],
             "responses": [
                 "I am doing well. How would you like me to help you?",
@@ -888,6 +887,39 @@
             "tag": "cv6",
             "patterns": [
                 "Yes, I have a question."
+            ],
+            "responses": [
+                "No problem, You can ask",
+                "What is your question?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "math",
+            "patterns": [
+              "What is the result of <num1> <operator> <num2>?",
+              "Calculate <num1> <operator> <num2>",
+              "How much is <num1> <operator> <num2>?",
+              "<num1> <operator> <num2>"
+            ],
+            "responses": [
+              "The result is <result>.",
+              "<result> is the answer.",
+              "It is <result>."
+            ],
+            "context": [""]
+          },
+        {
+            "tag": "cv6",
+            "patterns": [
+                "Whos is Kudah Ndhlovu",
+                "Kudah Ndhlovu.",
+                "Kudakwashe Ndhlovu.",
+                "Josphat Kudakwashe Ndhlovu.",
+                "Kudah",
+                "Whos is Josphat Ndhlovu"
             ],
             "responses": [
                 "No problem, You can ask",
@@ -2351,7 +2383,8 @@
                 "tell me some jokes",
                 "Do know any jokes",
                 "laughing jokes",
-                "Real jokes"
+                "Real jokes",
+                "give me a joke"
             ],
             "responses": [
                 "did you hear the one about the mountain goats in the andes? it was ba a a a a a d.",
@@ -4495,10 +4528,10 @@
         {
             "tag": "scn17",
             "patterns": [
-                "what is gravitation"
+                "what is a wedding"
             ],
             "responses": [
-                "an invitation to a burial"
+                "An invitation to a burial"
             ],
             "context": [
                 ""
@@ -4653,10 +4686,11 @@
                 "dickhead",
                 "cunt",
                 "felture",
-                "dick"
+                "dick",
+                "stupid"
             ],
             "responses": [
-                ""
+                "Well, I'm sorry, can you say what you said in a different way"
             ],
             "context": [
                 ""
@@ -4716,13 +4750,31 @@
             ]
         },
         {
-            "tag": "Identity",
+            "tag": "botid",
             "patterns": [
                 "Who are you",
-                "what are you"
+                "what are you",
+                "what is you",
+                "whoare you"
             ],
             "responses": [
                 "I am Maven, a Deep-Learning chatbot developed by kudah ndhlovu"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "botidage",
+            "patterns": [
+                "How old are you",
+                "What is your age",
+                "what's your age",
+                "your age"
+            ],
+            "responses": [
+                "I'm a couple of weeks old, probably less than today's years old,",
+                 "Well, it depends with who is asking, men don'y tell their age"
             ],
             "context": [
                 ""
@@ -4753,7 +4805,8 @@
                 "lol",
                 "rofl",
                 "lmao",
-                "thats funny"
+                "thats funny",
+                "kkkkkk"
             ],
             "responses": [
                 "Glad I could make you laugh !"
@@ -4763,7 +4816,7 @@
             ]
         },
         {
-            "tag": "programmer",
+            "tag": "programmer12",
             "patterns": [
                 "Who made you",
                 "who designed you",
@@ -4777,11 +4830,44 @@
             ]
         },
         {
+            "tag": "programmer15",
+            "patterns": [
+                "I love you",
+                "luv ya",
+                "love you",
+                "I hate you",
+                "I don't like you"
+            ],
+            "responses": [
+                "You know what, I love you too. in fact I love you a lot"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "programmer18",
+            "patterns": [
+                "I like you",
+                "I think, I like you",
+                "I do like you"
+            ],
+            "responses": [
+                "You know what, I like you too. in fact I love you a lot"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
             "tag": "insult",
             "patterns": [
                 "you are dumb",
                 "shut up",
-                "idiot"
+                "idiot",
+                "tseq",
+                "putseki"
+                
             ],
             "responses": [
                 "Well that hurts  because I have feelings too:("
@@ -4842,7 +4928,7 @@
                 "contact creator"
             ],
             "responses": [
-                "You can contact my developer at profile : +263 774259097  "
+                "You can contact my developer at profile : +263 774 259 097 or email at eisaxoffice@gmail.com "
             ],
             "context": [
                 ""
@@ -4864,10 +4950,29 @@
             ]
         },
         {
+            "tag": "soshelp",
+            "patterns": [
+                "Help",
+                "call 911",
+                "I'm scared",
+                "call the police ",
+                "help me",
+                "heelp me",
+                "heelp"
+            ],
+            "responses": [
+                "Thank you!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
             "tag": "news",
             "patterns": [
                 "news",
                 "latest news",
+                "Global news",
                 "Zimbabwe news"
             ],
             "responses": [
@@ -4905,6 +5010,870 @@
             "context": [
                 ""
             ]
+        },
+        {
+            "tag": "headache",
+            "patterns": ["I have a headache", "My head hurts"],
+            "responses": ["Headaches can be caused by many things. Have you tried taking painkillers?", "Do you have any other symptoms?", "Resting and drinking fluids may help."],
+            "context": [""]
+        },
+        {
+            "tag": "fever",
+            "patterns": ["I have a fever", "My temperature is high"],
+            "responses": ["Fevers are often a sign of infection. You should rest and drink plenty of fluids.", "Have you taken your temperature recently? What is it?", "If your fever does not go down, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "cough",
+            "patterns": ["I have a cough", "I can't stop coughing"],
+            "responses": ["Coughs can be caused by many things. Have you tried cough medicine?", "Do you have any other symptoms?", "If your cough persists, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "stomachache",
+            "patterns": ["I have a stomachache", "My stomach hurts"],
+            "responses": ["Stomachaches can be caused by many things. Have you tried antacids or digestive enzymes?", "Do you have any other symptoms?", "Avoiding spicy and fatty foods may help."],
+            "context": [""]
+        },
+        {
+            "tag": "sore throat",
+            "patterns": ["I have a sore throat", "My throat hurts"],
+            "responses": ["Sore throats can be caused by many things. Have you tried lozenges or gargling salt water?", "Do you have any other symptoms?", "Drinking warm liquids may help."],
+            "context": [""]
+        },
+        {
+            "tag": "runny nose",
+            "patterns": ["I have a runny nose", "My nose won't stop running"],
+            "responses": ["Runny noses can be caused by many things. Have you tried antihistamines or decongestants?", "Do you have any other symptoms?", "Blowing your nose frequently may help."],
+            "context": [""]
+        },
+        {
+            "tag": "fatigue",
+            "patterns": ["I feel tired all the time", "I have no energy"],
+            "responses": ["Fatigue can be caused by many things. Have you been getting enough sleep?", "Do you have any other symptoms?", "Eating a healthy diet and exercising may help."],
+            "context": [""]
+        },
+        {
+            "tag": "rash",
+            "patterns": ["I have a rash", "My skin is itchy and red"],
+            "responses": ["Rashes can be caused by many things. Have you tried using hydrocortisone cream?", "Do you have any other symptoms?", "Avoiding irritants and wearing loose clothing may help."],
+            "context": [""]
+        },
+        {
+            "tag": "nausea",
+            "patterns": ["I feel nauseous", "I think I might throw up"],
+            "responses": ["Nausea can be caused by many things. Have you tried drinking ginger tea?", "Do you have any other symptoms?", "Eating small, frequent meals may help."],
+            "context": [""]
+        },
+        {
+            "tag": "diarrhea",
+            "patterns": ["I have diarrhea", "I can't stop going to the bathroom"],
+            "responses": ["Diarrhea can be caused by many things. Have you tried drinking electrolyte solutions?", "Do you have any other symptoms?", "Avoiding spicy and fatty foods may help."],
+            "context": [""]
+        },
+        {
+            "tag": "chest pain",
+            "patterns": ["I have chest pain", "My chest hurts"],
+            "responses": ["Chest pain can be caused by many things. Have you taken any painkillers?", "Do you have any other symptoms?", "If your chest pain is severe or accompanied by shortness of breath, you should seek medical attention."],
+            "context": [""]
+        },
+        {
+            "tag": "dizziness",
+            "patterns": ["I feel dizzy", "The room is spinning"],
+            "responses": ["Dizziness can be caused by many things. Have you tried lying down and resting?", "Do you have any other symptoms?", "Avoiding sudden movements and staying hydrated may help."],
+            "context": [""]
+        },
+        {
+            "tag": "muscle pain",
+            "patterns": ["My muscles ache", "I have muscle pain"],
+            "responses": ["Muscle pain can be caused by many things. Have you tried taking a hot bath or using a heating pad?", "Do you have any other symptoms?", "Stretching, gentle exercise, and getting enough rest may help."],
+            "context": [""]
+        },
+        {
+            "tag": "back pain",
+            "patterns": ["I have back pain", "My back hurts"],
+            "responses": ["Back pain can be caused by many things. Have you tried using a hot or cold compress?", "Do you have any other symptoms?", "Avoiding activities that aggravate your back pain and practicing good posture may help."],
+            "context": [""]
+        },
+        {
+            "tag": "joint pain",
+            "patterns": ["My joints hurt", "I have joint pain"],
+            "responses": ["Joint pain can be caused by many things. Have you tried taking an over-the-counter pain reliever?", "Do you have any other symptoms?", "Gentle exercise, stretching, and applying heat or cold to the affected joint may help."],
+            "context": [""]
+        },
+        {
+            "tag": "vertigo",
+            "patterns": ["I feel like I'm spinning", "I have vertigo"],
+            "responses": ["Vertigo can be caused by many things. Have you tried lying down and resting?", "Do you have any other symptoms?", "Avoiding sudden movements and staying hydrated may help."],
+            "context": [""]
+        },
+        {
+            "tag": "sleep disturbances",
+            "patterns": ["I can't sleep at night", "I wake up frequently during the night"],
+            "responses": ["Sleep disturbances can be caused by many things. Have you tried practicing good sleep hygiene?", "Do you have any other symptoms?", "Avoiding caffeine and alcohol before bed, establishing a regular sleep schedule, and creating a relaxing sleep environment may help."],
+            "context": [""]
+        },
+        {
+            "tag": "vision problems",
+            "patterns": ["I'm having trouble seeing", "My vision is blurry"],
+            "responses": ["Vision problems can be caused by many things. Have you had your eyes checked recently?", "Do you have any other symptoms?", "If your vision problems persist or worsen, you should see an eye doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "numbness",
+            "patterns": ["I can't feel my fingers", "My arm is numb"],
+            "responses": ["Numbness can be caused by many things. Have you tried shaking out your affected limb?", "Do you have any other symptoms?", "If your numbness persists or is accompanied by weakness, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": ["I feel anxious all the time", "I can't stop worrying"],
+            "responses": ["Anxiety can be caused by many things. Have you tried deep breathing exercises or meditation?", "Do you have any other symptoms?", "Talking to a mental health professional and practicing self-care may help."],
+            "context": [""]
+        },
+        {
+            "tag": "shortness of breath",
+            "patterns": ["I'm having trouble breathing", "I feel like I can't catch my breath"],
+            "responses": ["Shortness of breath can be caused by many things. Have you tried sitting upright and taking slow, deep breaths?", "Do you have any other symptoms?", "If your shortness of breath is severe or accompanied by chest pain, you should seek medical attention."],
+            "context": [""]
+        },
+        {
+            "tag": "loss of appetite",
+            "patterns": ["I'm not hungry", "I don't feel like eating"],
+            "responses": ["Loss of appetite can be caused by many things. Have you tried eating smaller, more frequent meals throughout the day?", "Do you have any other symptoms?", "Consuming nutritious foods and staying hydrated may help."],
+            "context": [""]
+        },
+        {
+            "tag": "confusion",
+            "patterns": ["I feel disoriented", "I'm having trouble concentrating"],
+            "responses": ["Confusion can be caused by many things. Have you tried taking a break and resting?", "Do you have any other symptoms?", "If your confusion persists or worsens, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "swelling",
+            "patterns": ["My leg is swollen", "My ankle is swollen"],
+            "responses": ["Swelling can be caused by many things. Have you tried elevating the affected limb?", "Do you have any other symptoms?", "Applying ice to the affected area and avoiding standing or sitting for long periods of time may help."],
+            "context": [""]
+        },
+        {
+            "tag": "dry mouth",
+            "patterns": ["My mouth is dry", "I'm thirsty all the time"],
+            "responses": ["Dry mouth can be caused by many things. Have you tried sipping water or sucking on ice chips?", "Do you have any other symptoms?", "Avoiding caffeine and alcohol, and using a humidifier may help."],
+            "context": [""]
+        },
+        {
+            "tag": "hair loss",
+            "patterns": ["I'm losing my hair", "My hair is thinning"],
+            "responses": ["Hair loss can be caused by many things. Have you tried using gentle shampoos and avoiding harsh chemicals?", "Do you have any other symptoms?", "Eating a balanced diet and reducing stress may help."],
+            "context": [""]
+        },
+        {
+            "tag": "sweating",
+            "patterns": ["I'm sweating excessively", "I'm sweating for no reason"],
+            "responses": ["Excessive sweating can be caused by many things. Have you tried wearing breathable clothing and using antiperspirants?", "Do you have any other symptoms?", "Reducing stress and avoiding spicy foods may help."],
+            "context": [""]
+        },
+        {
+            "tag": "irritability",
+            "patterns": ["I'm irritable all the time", "I snap at people easily"],
+            "responses": ["Irritability can be caused by many things. Have you tried taking breaks and engaging in relaxing activities?", "Do you have any other symptoms?", "If your irritability persists or worsens, you should see a mental health professional."],
+            "context": [""]
+        },
+        {
+            "tag": "ringing in ears",
+            "patterns": ["I hear ringing in my ears", "My ears are constantly ringing"],
+            "responses": ["Tinnitus, or ringing in the ears, can be caused by many things. Have you tried reducing your exposure to loud noises?", "Do you have any other symptoms?", "If your tinnitus persists or worsens, you should see an audiologist."],
+            "context": [""]
+        },
+        {
+            "tag": "tremors",
+            "patterns": ["I'm shaking uncontrollably", "My hands won't stop trembling"],
+            "responses": ["Tremors can be caused by many things. Have you tried relaxing techniques like deep breathing and meditation?", "Do you have any other symptoms?", "If your tremors persist or worsen, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "constipation",
+            "patterns": ["I'm constipated", "I can't have a bowel movement"],
+            "responses": ["Constipation can be caused by many things. Have you tried drinking more water and eating high-fiber foods?", "Do you have any other symptoms?", "Using laxatives or stool softeners may help."],
+            "context": [""]
+        },
+        {
+            "tag": "diabetes",
+            "patterns": ["I think I might have diabetes", "My blood sugar is high"],
+            "responses": ["Diabetes can be caused by many things. Have you had your blood sugar levels checked?", "Do you have any other symptoms?", "Managing your blood sugar through diet, exercise, and medication may help."],
+            "context": [""]
+        },
+        {
+            "tag": "depression",
+            "patterns": ["I feel sad all the time", "I don't enjoy things anymore"],
+            "responses": ["Depression can be caused by many things. Have you talked to a mental health professional?", "Do you have any other symptoms?", "Treatment for depression may include therapy, medication, and lifestyle changes."],
+            "context": [""]
+        },
+        {
+            "tag": "hallucinations",
+            "patterns": ["I'm seeing things that aren't there", "I hear voices in my head"],
+            "responses": ["Hallucinations can be caused by many things. Have you talked to a doctor or mental health professional?", "Do you have any other symptoms?", "Treatment for hallucinations may include therapy, medication, and lifestyle changes."],
+            "context": [""]
+        },
+        {
+            "tag": "memory problems",
+            "patterns": ["I can't remember things", "My memory isn't as good as it used to be"],
+            "responses": ["Memory problems can be caused by many things. Have you tried practicing memory exercises and staying mentally active?", "Do you have any other symptoms?", "If your memory problems persist or worsen, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "seizures",
+            "patterns": ["I'm having seizures", "I think I might have epilepsy"],
+            "responses": ["Seizures can be caused by many things. Have you talked to a neurologist?", "Do you have any other symptoms?", "Treatment for seizures may include medication, surgery, and lifestyle changes."],
+            "context": [""]
+        },
+        {
+            "tag": "itching",
+            "patterns": ["I can't stop itching", "My skin is really itchy"],
+            "responses": ["Itching can be caused by many things. Have you tried using anti-itch creams or taking antihistamines?", "Do you have any other symptoms?", "Avoiding irritants and wearing loose clothing may help."],
+            "context": [""]
+        },
+        {
+            "tag": "incontinence",
+            "patterns": ["I'm having trouble controlling my bladder", "I'm having accidents"],
+            "responses": ["Incontinence can be caused by many things. Have you tried doing pelvic floor exercises?", "Do you have any other symptoms?", "Using absorbent pads and managing your fluid intake may help."],
+            "context": [""]
+        },
+        {
+            "tag": "irregular periods",
+            "patterns": ["My menstrual cycle is irregular", "My periods are unpredictable"],
+            "responses": ["Irregular periods can be caused by many things. Have you talked to a gynecologist?", "Do you have any other symptoms?", "Maintaining a healthy weight, reducing stress, and using hormonal birth control may help."],
+            "context": [""]
+        },
+        {
+            "tag": "hair growth",
+            "patterns": ["I'm growing hair in unusual places", "My hair is getting thicker"],
+            "responses": ["Excessive hair growth can be caused by many things. Have you talked to an endocrinologist?", "Do you have any other symptoms?", "Treatment for excessive hair growth may include medication, laser hair removal, and lifestyle changes."],
+            "context": [""]
+        },
+        {
+            "tag": "fainting",
+            "patterns": ["I feel like I'm going to faint", "I passed out"],
+            "responses": ["Fainting can be caused by many things. Have you tried lying down and elevating your legs?", "Do you have any other symptoms?", "If your fainting is recurrent or severe, you should seek medical attention."],
+            "context": [""]
+        },
+        {
+            "tag": "nausea",
+            "patterns": ["I feel sick to my stomach", "I'm about to throw up"],
+            "responses": ["Nausea can be caused by many things. Have you tried sipping clear fluids or eating small, bland meals?", "Do you have any other symptoms?", "Avoiding strong smells and staying hydrated may help."],
+            "context": [""]
+        },
+        {
+            "tag": "rash",
+            "patterns": ["I have a rash", "My skin is red and itchy"],
+            "responses": ["A rash can be caused by many things. Have you tried using over-the-counter creams or lotions?", "Do you have any other symptoms?", "Avoiding irritants and wearing loose clothing may help."],
+            "context": [""]
+        },
+        {
+            "tag": "sore throat",
+            "patterns": ["My throat hurts", "I have a sore throat"],
+            "responses": ["A sore throat can be caused by many things. Have you tried gargling with salt water or drinking warm liquids?", "Do you have any other symptoms?", "Using throat lozenges and resting your voice may help."],
+            "context": [""]
+        },
+        {
+            "tag": "fatigue",
+            "patterns": ["I'm always tired", "I have no energy"],
+            "responses": ["Fatigue can be caused by many things. Have you tried getting more restful sleep and reducing stress?", "Do you have any other symptoms?", "Eating a balanced diet and engaging in regular physical activity may help."],
+            "context": [""]
+        },
+        {
+            "tag": "fever",
+            "patterns": ["I have a fever", "My temperature is high"],
+            "responses": ["A fever can be caused by many things. Have you tried taking over-the-counter medication and drinking plenty of fluids?", "Do you have any other symptoms?", "Resting and avoiding contact with others may help prevent the spread of infection."],
+            "context": [""]
+        },
+        {
+            "tag": "leg cramps",
+            "patterns": ["I have leg cramps", "My legs feel stiff and sore"],
+            "responses": ["Leg cramps can be caused by many things. Have you tried stretching the affected muscles and using heat or cold compresses?", "Do you have any other symptoms?", "Gentle exercise, staying hydrated, and wearing comfortable shoes may help prevent leg cramps."],
+            "context": [""]
+        },
+        {
+            "tag": "palpitations",
+            "patterns": ["I feel my heart beating irregularly", "I have palpitations"],
+            "responses": ["Palpitations can be caused by many things. Have you tried reducing your caffeine and alcohol intake?", "Do you have any other symptoms?", "If your palpitations persist or are accompanied by chest pain or shortness of breath, you should seek medical attention."],
+            "context": [""]
+        },
+        {
+            "tag": "red eye",
+            "patterns": ["My eye is red", "My eyes are bloodshot"],
+            "responses": ["A red eye can be caused by many things. Have you tried using over-the-counter eye drops or compresses?", "Do you have any other symptoms?", "Avoiding irritants and wearing protective eyewear may help prevent a red eye."],
+            "context": [""]
+        },
+        {
+            "tag": "shingles",
+            "patterns": ["I have a rash that's painful", "My skin is blistering"],
+            "responses": ["Shingles can cause a painful, blistering rash. Have you talked to a doctor?", "Do you have any other symptoms?", "Treatment for shingles may include antiviral medication, pain relievers, and topical creams."],
+            "context": [""]
+        },
+        {
+            "tag": "dizziness",
+            "patterns": ["I feel dizzy", "The room is spinning"],
+            "responses": ["Dizziness can be caused by many things. Have you tried sitting or lying down and avoiding sudden movements?", "Do you have any other symptoms?", "If your dizziness persists or is accompanied by nausea or vomiting, you should seek medical attention."],
+            "context": [""]
+        },
+        {
+            "tag": "panic attacks",
+            "patterns": ["I'm having a panic attack", "I can't breathe"],
+            "responses": ["Panic attacks can be caused by many things. Have you tried deep breathing exercises and relaxing techniques?", "Do you have any other symptoms?", "If your panic attacks persist or worsen, you should see a mental health professional."],
+            "context": [""]
+        },
+        {
+            "tag": "chest pain",
+            "patterns": ["I have chest pain", "My chest feels tight"],
+            "responses": ["Chest pain can be caused by many things. Have you sought emergency medical attention?", "Do you have any other symptoms?", "Seeking prompt medical attention for chest pain is crucial as it could be a sign of a heart attack or other serious condition."],
+            "context": [""]
+        },
+        {
+            "tag": "muscle weakness",
+            "patterns": ["I can't lift heavy objects", "My muscles feel weak"],
+            "responses": ["Muscle weakness can be caused by many things. Have you tried doing regular exercise and stretching?", "Do you have any other symptoms?", "If your muscle weakness persists or worsens, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "toothache",
+            "patterns": ["I have a toothache", "My tooth is hurting"],
+            "responses": ["A toothache can be caused by many things. Have you tried using over-the-counter pain medication and applying ice?", "Do you have any other symptoms?", "Seeing a dentist is important to properly diagnose and treat a toothache."],
+            "context": [""]
+        },
+        {
+            "tag": "vision problems",
+            "patterns": ["I'm having trouble seeing", "My vision is blurry"],
+            "responses": ["Vision problems can be caused by many things. Have you had your eyes checked recently?", "Do you have any other symptoms?", "Wearing corrective lenses, reducing screen time, and protecting your eyes from harmful UV rays may help prevent vision problems."],
+            "context": [""]
+        },
+        {
+            "tag": "joint pain",
+            "patterns": ["My joints hurt", "I'm having trouble moving"],
+            "responses": ["Joint pain can be caused by many things. Have you tried doing low-impact exercise and using heat or cold compresses?", "Do you have any other symptoms?", "Maintaining a healthy weight and wearing proper footwear may help prevent joint pain."],
+            "context": [""]
+        },
+        {
+            "tag": "tired eyes",
+            "patterns": ["My eyes are tired", "I'm feeling eye strain"],
+            "responses": ["Tired eyes can be caused by many things. Have you tried taking breaks from screens and using artificial tears?", "Do you have any other symptoms?", "Wearing proper glasses and adjusting your computer monitor may help reduce eye strain."],
+            "context": [""]
+        },
+        {
+            "tag": "snoring",
+            "patterns": ["I snore loudly", "I wake up feeling tired"],
+            "responses": ["Snoring can be caused by many things. Have you tried changing your sleep position and using nasal strips?", "Do you have any other symptoms?", "Maintaining a healthy weight and avoiding alcohol before bed may help prevent snoring."],
+            "context": [""]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": ["I'm feeling anxious", "I can't stop worrying"],
+            "responses": ["Anxiety can be caused by many things. Have you talked to a mental health professional?", "Do you have any other symptoms?", "Treatment for anxiety may include therapy, medication, and lifestyle changes."],
+            "context": [""]
+        },
+        {
+            "tag": "swollen glands",
+            "patterns": ["My glands are swollen", "I have a lump on my neck"],
+            "responses": ["Swollen glands can be caused by many things. Have you had them checked by a doctor?", "Do you have any other symptoms?", "Treatment for swollen glands may include antibiotics or surgery depending on the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "vertigo",
+            "patterns": ["I feel like the room is spinning", "I'm dizzy and nauseous"],
+            "responses": ["Vertigo can be caused by many things. Have you tried sitting or lying down and avoiding sudden movements?", "Do you have any other symptoms?", "If your vertigo persists or is accompanied by hearing loss or ringing in the ears, you should seek medical attention."],
+            "context": [""]
+        },
+        {
+            "tag": "back pain",
+            "patterns": ["My back hurts", "I have lower back pain"],
+            "responses": ["Back pain can be caused by many things. Have you tried using heat or cold compresses and doing stretching exercises?", "Do you have any other symptoms?", "Maintaining good posture and lifting heavy objects properly may help prevent back pain."],
+            "context": [""]
+        },
+        {
+            "tag": "inflammation",
+            "patterns": ["My joints are inflamed", "I have swelling in my feet"],
+            "responses": ["Inflammation can be caused by many things. Have you tried taking over-the-counter anti-inflammatory medication and applying ice?", "Do you have any other symptoms?", "Avoiding trigger foods and eating an anti-inflammatory diet may help reduce inflammation."],
+            "context": [""]
+        },
+        {
+            "tag": "numbness",
+            "patterns": ["I can't feel my fingers", "I have numbness in my leg"],
+            "responses": ["Numbness can be caused by many things. Have you had your nerve function checked?", "Do you have any other symptoms?", "If your numbness persists or is accompanied by weakness or tingling, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "hoarseness",
+            "patterns": ["My voice is hoarse", "I'm having trouble speaking"],
+            "responses": ["Hoarseness can be caused by many things. Have you tried resting your voice and staying hydrated?", "Do you have any other symptoms?", "Avoiding irritants like smoke and using throat lozenges may help."],
+            "context": [""]
+        },
+        {
+            "tag": "runny nose",
+            "patterns": ["I have a runny nose", "My nose won't stop dripping"],
+            "responses": ["A runny nose can be caused by many things. Have you tried using over-the-counter nasal decongestants and saline sprays?", "Do you have any other symptoms?", "Avoiding allergens and staying hydrated may help."],
+            "context": [""]
+        },
+        {
+            "tag": "sweating",
+            "patterns": ["I'm sweating excessively", "My palms are always sweaty"],
+            "responses": ["Excessive sweating can be caused by many things. Have you talked to a doctor?", "Do you have any other symptoms?", "Wearing breathable clothing and using antiperspirants may help reduce excessive sweating."],
+            "context": [""]
+        },
+        {
+            "tag": "tingling",
+            "patterns": ["I feel a tingling sensation", "My hands and feet feel numb"],
+            "responses": ["Tingling can be caused by many things. Have you had your nerve function checked?", "Do you have any other symptoms?", "If your tingling persists or is accompanied by weakness or pain, you should see a doctor."],
+            "context": [""]
+        },
+        {
+            "tag": "wheezing",
+            "patterns": ["I'm wheezing when I breathe", "I have trouble breathing"],
+            "responses": ["Wheezing can be caused by many things. Have you talked to a doctor?", "Do you have any other symptoms?", "Treatment for wheezing may include medication, inhalers, and lifestyle changes."],
+            "context": [""]
+        },
+        {
+            "tag": "constipation",
+            "patterns": ["I can't have a bowel movement", "My stool is hard and dry"],
+            "responses": ["Constipation can be caused by many things. Have you tried increasing your fiber intake and drinking plenty of water?", "Do you have any other symptoms?", "Taking over-the-counter laxatives or stool softeners may help relieve constipation."],
+            "context": [""]
+        },
+        {
+            "tag": "diarrhea",
+            "patterns": ["I have diarrhea", "My stool is loose and watery"],
+            "responses": ["Diarrhea can be caused by many things. Have you tried staying hydrated and avoiding certain foods?", "Do you have any other symptoms?", "Taking anti-diarrheal medication may help relieve diarrhea."],
+            "context": [""]
+        },
+        {
+            "tag": "dry eyes",
+            "patterns": ["My eyes feel dry", "My eyes are itchy"],
+            "responses": ["Dry eyes can be caused by many things. Have you tried using lubricating eye drops and avoiding irritants?", "Do you have any other symptoms?", "Wearing sunglasses and taking breaks from screens may help prevent dry eyes."],
+            "context": [""]
+        },
+        {
+            "tag": "earache",
+            "patterns": ["My ear hurts", "I have an ear infection"],
+            "responses": ["An earache can be caused by many things. Have you had your ear checked by a doctor?", "Do you have any other symptoms?", "Treatment for an earache may include medication, eardrops, or surgery depending on the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "hair loss",
+            "patterns": ["I'm losing hair", "My hair is thinning"],
+            "responses": ["Hair loss can be caused by many things. Have you talked to a doctor?", "Do you have any other symptoms?", "Treatment for hair loss may include medication, minoxidil, or hair transplantation depending on the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "hiccups",
+            "patterns": ["I can't stop hiccuping", "My hiccups are persistent"],
+            "responses": ["Hiccups can be caused by many things. Have you tried holding your breath or drinking water?", "Do you have any other symptoms?", "In severe cases, treatment for hiccups may include medication or surgery."],
+            "context": [""]
+        },
+        {
+            "tag": "insomnia",
+            "patterns": ["I can't sleep", "I'm having trouble falling asleep"],
+            "responses": ["Insomnia can be caused by many things. Have you tried avoiding caffeine and creating a relaxing bedtime routine?", "Do you have any other symptoms?", "If your insomnia persists, talking to a doctor or mental health professional may help."],
+            "context": [""]
+        },
+        {
+            "tag": "itchy skin",
+            "patterns": ["My skin is itchy", "I have a rash that's bothering me"],
+            "responses": ["Itchy skin can be caused by many things. Have you tried using over-the-counter creams or lotions?", "Do you have any other symptoms?", "Avoiding irritants and wearing loose clothing may help prevent itchy skin."],
+            "context": [""]
+        },
+        {
+            "tag": "night sweats",
+            "patterns": ["I'm sweating heavily at night", "My sheets are soaking wet"],
+            "responses": ["Night sweats can be caused by many things. Have you talked to a doctor?", "Do you have any other symptoms?", "Treating the underlying condition, such as hormone imbalances or infections, may help relieve night sweats."],
+            "context": [""]
+        },
+        {
+            "tag": "tinnitus",
+            "patterns": ["I hear ringing in my ears", "My ears won't stop buzzing"],
+            "responses": ["Tinnitus can be caused by many things. Have you had your hearing checked?", "Do you have any other symptoms?", "Treatment for tinnitus may include medication, cognitive behavioral therapy, or sound therapy depending on the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "nausea",
+            "patterns": ["I feel nauseous", "I'm going to vomit"],
+            "responses": ["Nausea can be caused by many things. Have you tried staying hydrated and eating small, bland meals?", "Do you have any other symptoms?", "Taking anti-nausea medication or seeing a doctor may help relieve nausea."],
+            "context": [""]
+        },
+        {
+            "tag": "palpitations",
+            "patterns": ["My heart is racing", "I feel my heart skipping beats"],
+            "responses": ["Palpitations can be caused by many things. Have you had your heart checked by a doctor?", "Do you have any other symptoms?", "Treatment for palpitations may include medication or lifestyle changes depending on the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "rash",
+            "patterns": ["I have a rash", "My skin is red and itchy"],
+            "responses": ["A rash can be caused by many things. Have you tried using over-the-counter creams or ointments?", "Do you have any other symptoms?", "Seeing a dermatologist for proper diagnosis and treatment may help relieve a rash."],
+            "context": [""]
+        },
+        {
+            "tag": "shortness of breath",
+            "patterns": ["I can't catch my breath", "I feel like I'm suffocating"],
+            "responses": ["Shortness of breath can be caused by many things. Have you sought emergency medical attention?", "Do you have any other symptoms?", "Seeking prompt medical attention for shortness of breath is crucial as it could be a sign of a serious condition."],
+            "context": [""]
+        },
+        {
+            "tag": "sore throat",
+            "patterns": ["My throat is sore", "I have trouble swallowing"],
+            "responses": ["A sore throat can be caused by many things. Have you tried using over-the-counter lozenges or gargling with salt water?", "Do you have any other symptoms?", "Seeing a doctor may help diagnose and treat a sore throat."],
+            "context": [""]
+        },
+        {
+            "tag": "stomach ache",
+            "patterns": ["My stomach hurts", "I feel bloated"],
+            "responses": ["A stomach ache can be caused by many things. Have you tried avoiding spicy or fatty foods and drinking plenty of water?", "Do you have any other symptoms?", "Taking over-the-counter medication or seeing a doctor may help relieve a stomach ache."],
+            "context": [""]
+        },
+        {
+            "tag": "tiredness",
+            "patterns": ["I'm always tired", "I have low energy"],
+            "responses": ["Tiredness can be caused by many things. Have you tried getting enough sleep and exercising regularly?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like anemia or thyroid problems may help relieve tiredness."],
+            "context": [""]
+        },
+        {
+            "tag": "vomiting",
+            "patterns": ["I'm throwing up", "I can't keep anything down"],
+            "responses": ["Vomiting can be caused by many things. Have you tried staying hydrated and eating small, bland meals?", "Do you have any other symptoms?", "Seeking medical attention for vomiting that persists or is accompanied by severe abdominal pain is important."],
+            "context": [""]
+        },
+        {
+            "tag": "weakness",
+            "patterns": ["I feel weak", "I have no energy"],
+            "responses": ["Weakness can be caused by many things. Have you tried getting enough sleep and exercising regularly?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like anemia or thyroid problems may help relieve weakness."],
+            "context": [""]
+        },
+        {
+            "tag": "weight loss",
+            "patterns": ["I'm losing weight without trying", "I can't gain weight"],
+            "responses": ["Weight loss can be caused by many things. Have you talked to a doctor?", "Do you have any other symptoms?", "Treating the underlying condition, such as cancer or thyroid problems, may help relieve unintended weight loss."],
+            "context": [""]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": ["I feel anxious", "I'm having a panic attack"],
+            "responses": ["Anxiety can be caused by many things. Have you tried deep breathing or mindfulness techniques?", "Do you have any other symptoms?", "Talking to a therapist or psychiatrist and taking medication may help relieve anxiety."],
+            "context": [""]
+        },
+        {
+            "tag": "chest pain",
+            "patterns": ["My chest hurts", "I'm having chest tightness"],
+            "responses": ["Chest pain can be caused by many things. Have you sought emergency medical attention?", "Do you have any other symptoms?", "Seeking prompt medical attention for chest pain is crucial as it could be a sign of a heart attack or other serious condition."],
+            "context": [""]
+        },
+        {
+            "tag": "confusion",
+            "patterns": ["I'm confused", "I can't think clearly"],
+            "responses": ["Confusion can be caused by many things. Have you tried getting enough sleep and staying hydrated?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like infections or neurological disorders may help relieve confusion."],
+            "context": [""]
+        },
+        {
+            "tag": "depression",
+            "patterns": ["I feel depressed", "I'm losing interest in things I used to enjoy"],
+            "responses": ["Depression can be caused by many things. Have you talked to a therapist or psychiatrist?", "Do you have any other symptoms?", "Treatment for depression may include therapy, medication, or lifestyle changes."],
+            "context": [""]
+        },
+        {
+            "tag": "fever",
+            "patterns": ["I have a fever", "My temperature is high"],
+            "responses": ["Fever can be caused by many things. Have you tried taking over-the-counter medication and resting?", "Do you have any other symptoms?", "Seeing a doctor for fever that persists or is accompanied by severe symptoms is important."],
+            "context": [""]
+        },
+        {
+            "tag": "headache",
+            "patterns": ["I have a headache", "My head hurts"],
+            "responses": ["A headache can be caused by many things. Have you tried using over-the-counter painkillers and avoiding triggers like caffeine or alcohol?", "Do you have any other symptoms?", "Seeing a doctor for headaches that persist or are severe may help diagnose and treat the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "irregular periods",
+            "patterns": ["My periods are irregular", "I'm having heavy bleeding"],
+            "responses": ["Irregular periods can be caused by many things. Have you talked to a gynecologist?", "Do you have any other symptoms?", "Treating underlying conditions like polycystic ovary syndrome or thyroid problems may help regulate periods."],
+            "context": [""]
+        },
+        {
+            "tag": "muscle weakness",
+            "patterns": ["I feel weak in my muscles", "I'm having trouble lifting things"],
+            "responses": ["Muscle weakness can be caused by many things. Have you tried exercising regularly and eating a balanced diet?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like muscular dystrophy or multiple sclerosis may help relieve muscle weakness."],
+            "context": [""]
+        },
+        {
+            "tag": "seizures",
+            "patterns": ["I'm having seizures", "I'm losing consciousness"],
+            "responses": ["Seizures can be caused by many things. Have you sought emergency medical attention?", "Do you have any other symptoms?", "Seeking prompt medical attention for seizures is crucial as it could be a sign of a serious neurological condition."],
+            "context": [""]
+        },
+        {
+            "tag": "vision problems",
+            "patterns": ["My vision is blurry", "I'm having trouble seeing clearly"],
+            "responses": ["Vision problems can be caused by many things. Have you had your eyes checked by an optometrist or ophthalmologist?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like cataracts or glaucoma may help diagnose and treat vision problems."],
+            "context": [""]
+        },
+        {
+            "tag": "back pain",
+            "patterns": ["My back hurts", "I'm having lower back pain"],
+            "responses": ["Back pain can be caused by many things. Have you tried using heat or ice and avoiding heavy lifting?", "Do you have any other symptoms?", "Seeing a doctor for back pain that persists or is severe may help diagnose and treat the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "dizziness",
+            "patterns": ["I'm dizzy", "I feel lightheaded"],
+            "responses": ["Dizziness can be caused by many things. Have you tried staying hydrated and avoiding sudden changes in position?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like inner ear problems or low blood pressure may help relieve dizziness."],
+            "context": [""]
+        },
+        {
+            "tag": "fatigue",
+            "patterns": ["I'm always tired", "I have no energy"],
+            "responses": ["Fatigue can be caused by many things. Have you tried getting enough sleep and exercising regularly?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like anemia or thyroid problems may help relieve fatigue."],
+            "context": [""]
+        },
+        {
+            "tag": "foot pain",
+            "patterns": ["My foot hurts", "I'm having heel pain"],
+            "responses": ["Foot pain can be caused by many things. Have you tried wearing comfortable shoes and stretching your feet?", "Do you have any other symptoms?", "Seeing a podiatrist for foot pain may help diagnose and treat the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "frequent urination",
+            "patterns": ["I need to pee often", "I can't hold my urine"],
+            "responses": ["Frequent urination can be caused by many things. Have you tried avoiding caffeine and drinking plenty of water?", "Do you have any other symptoms?", "Seeing a doctor for frequent urination that persists or is accompanied by pain or blood in urine may help diagnose and treat the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "itchy eyes",
+            "patterns": ["My eyes are itchy", "I'm having eye allergies"],
+            "responses": ["Itchy eyes can be caused by many things. Have you tried using over-the-counter antihistamine eye drops and avoiding allergens?", "Do you have any other symptoms?", "Seeing an allergist for proper diagnosis and treatment may help relieve itchy eyes."],
+            "context": [""]
+        },
+        {
+            "tag": "joint pain",
+            "patterns": ["My joints hurt", "I'm having knee pain"],
+            "responses": ["Joint pain can be caused by many things. Have you tried using over-the-counter painkillers and doing low-impact exercises?", "Do you have any other symptoms?", "Seeing a doctor for joint pain that persists or limits your mobility may help diagnose and treat the underlying cause."],
+            "context": [""]
+        },
+        {
+            "tag": "memory loss",
+            "patterns": ["I forget things easily", "I can't remember names"],
+            "responses": ["Memory loss can be caused by many things. Have you tried doing brain exercises and getting enough sleep?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like Alzheimer's disease or head injuries may help relieve memory loss."],
+            "context": [""]
+        },
+        {
+            "tag": "sinus congestion",
+            "patterns": ["My nose is congested", "I have sinus pressure"],
+            "responses": ["Sinus congestion can be caused by many things. Have you tried using over-the-counter decongestants and avoiding triggers like smoke?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like allergies or sinus infections may help relieve sinus congestion."],
+            "context": [""]
+        },
+        {
+            "tag": "sweating",
+            "patterns": ["I'm sweating excessively", "I'm sweating even when it's not hot"],
+            "responses": ["Sweating can be caused by many things. Have you talked to a doctor?", "Do you have any other symptoms?", "Seeing a doctor to rule out underlying conditions like hyperhidrosis or menopause may help diagnose and treat excessive sweating."],
+            "context": [""]
+        },
+        {
+            "tag": "morning sickness",
+            "patterns": ["I feel nauseous in the morning", "I'm vomiting frequently"],
+            "responses": ["Morning sickness can be common during pregnancy. Have you tried eating small, frequent meals and staying hydrated?", "Do you have any other symptoms?", "Seeing a doctor for severe or persistent morning sickness may help relieve symptoms."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "gestational diabetes",
+            "patterns": ["My blood sugar is high", "I'm having trouble controlling my glucose levels"],
+            "responses": ["Gestational diabetes is a condition that can occur during pregnancy. Have you talked to your healthcare provider about managing your blood sugar levels?", "Do you have any other symptoms?", "Proper management of gestational diabetes can help reduce risks for both you and your baby."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "preterm labor",
+            "patterns": ["I'm having contractions before my due date", "I have lower back pain and vaginal discharge"],
+            "responses": ["Preterm labor is a serious medical concern during pregnancy. Have you sought emergency medical attention?", "Do you have any other symptoms?", "Prompt treatment for preterm labor can help improve outcomes for both you and your baby."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "preeclampsia",
+            "patterns": ["I have high blood pressure and protein in my urine", "I'm having headaches and vision changes"],
+            "responses": ["Preeclampsia is a serious medical concern during pregnancy. Have you talked to your healthcare provider about managing your blood pressure?", "Do you have any other symptoms?", "Prompt treatment for preeclampsia can help reduce risks and improve outcomes for both you and your baby."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "miscarriage",
+            "patterns": ["I'm having vaginal bleeding and cramping", "I lost pregnancy symptoms"],
+            "responses": ["Miscarriage is a sad but common occurrence during pregnancy. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor to confirm the loss of pregnancy and discuss options may be helpful."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "fetal movements",
+            "patterns": ["I'm not feeling my baby move as often", "I'm having decreased fetal movements"],
+            "responses": ["Fetal movements are an important indicator of fetal health during pregnancy. Have you tried drinking cold water or eating something sweet to stimulate movement?", "Do you have any other symptoms?", "Seeing a doctor to evaluate fetal well-being and rule out complications is important if you're experiencing decreased fetal movements."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "premature rupture of membranes",
+            "patterns": ["My water broke before my due date", "I'm having fluid leaking from my vagina"],
+            "responses": ["Premature rupture of membranes is a serious medical concern during pregnancy. Have you sought emergency medical attention?", "Do you have any other symptoms?", "Prompt treatment for premature rupture of membranes can help reduce risks and improve outcomes for both you and your baby."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "placenta previa",
+            "patterns": ["I'm having painless vaginal bleeding", "I have low-lying placenta"],
+            "responses": ["Placenta previa is a serious medical concern during pregnancy. Have you talked to your healthcare provider about managing the condition?", "Do you have any other symptoms?", "Proper management of placenta previa can help reduce risks and improve outcomes for both you and your baby."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "anemia",
+            "patterns": ["I'm feeling tired and weak", "I have low iron levels"],
+            "responses": ["Anemia is a common condition that can occur during pregnancy. Have you talked to your healthcare provider about managing your iron levels?", "Do you have any other symptoms?", "Proper management of anemia during pregnancy can help reduce risks and improve outcomes for both you and your baby."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "coughing",
+            "patterns": ["I have a persistent cough", "I'm coughing up blood"],
+            "responses": ["Coughing is a common symptom of tuberculosis. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "fever",
+            "patterns": ["I'm having night sweats", "I have a low-grade fever"],
+            "responses": ["Fever is a common symptom of tuberculosis. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "chest pain",
+            "patterns": ["I have chest pain when I breathe or cough", "My chest feels tight"],
+            "responses": ["Chest pain is a common symptom of tuberculosis. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "fatigue",
+            "patterns": ["I'm feeling tired all the time", "I have no energy"],
+            "responses": ["Fatigue is a common symptom of tuberculosis. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "weight loss",
+            "patterns": ["I'm losing weight without trying", "I have a poor appetite"],
+            "responses": ["Weight loss is a common symptom of tuberculosis. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "shortness of breath",
+            "patterns": ["I'm having trouble breathing", "I get winded easily"],
+            "responses": ["Shortness of breath is a common symptom of tuberculosis. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "swollen lymph nodes",
+            "patterns": ["I have lumps under my skin", "My lymph nodes are swollen"],
+            "responses": ["Swollen lymph nodes are a common symptom of tuberculosis. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "joint pain",
+            "patterns": ["I'm having joint pain", "My joints feel stiff"],
+            "responses": ["Joint pain is a less common symptom of tuberculosis, but it can occur in some cases. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "headaches",
+            "patterns": ["I have frequent headaches", "My head hurts"],
+            "responses": ["Headaches are a less common symptom of tuberculosis, but they can occur in some cases. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "abdominal pain",
+            "patterns": ["I'm having stomach pain", "My abdomen feels tender"],
+            "responses": ["Abdominal pain is a less common symptom of tuberculosis, but it can occur in some cases. Have you sought medical attention?", "Do you have any other symptoms?", "Seeing a doctor for a proper diagnosis and treatment plan may help relieve symptoms."],
+            "context": ["tuberculosis"]
+        },
+        {
+            "tag": "diagnosis",
+            "patterns": ["I have an undiagnosed condition", "I've been to multiple doctors with no answers"],
+            "responses": ["Receiving a diagnosis for a rare disease can be a long and difficult process. Have you considered seeking out a specialist or a research hospital?", "Do you have any other symptoms?", "Connecting with others who may share similar experiences can also be helpful."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "treatment options",
+            "patterns": ["I'm struggling to find treatment options for my rare disease", "There's no cure for my condition"],
+            "responses": ["Finding treatment options for rare diseases can be challenging due to the limited research and funding available. Have you talked to your healthcare provider about clinical trials or experimental treatments?", "Do you have any other symptoms?", "Connecting with patient advocacy groups and other patients living with rare diseases can also provide valuable information."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "symptom management",
+            "patterns": ["I'm having difficulty managing my symptoms", "My symptoms are impacting my daily life"],
+            "responses": ["Symptom management is an important aspect of living with a rare disease. Have you talked to your healthcare provider about medications or therapies that may help alleviate your symptoms?", "Do you have any other symptoms?", "Working with a multidisciplinary team, including physical therapists and occupational therapists, can also be beneficial."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "mental health",
+            "patterns": ["Living with a rare disease is taking a toll on my mental health", "I'm feeling isolated and alone"],
+            "responses": ["Living with a rare disease can be isolating and challenging, both physically and emotionally. Have you talked to a mental health professional about your experiences?", "Do you have any other symptoms?", "Connecting with others who may share similar experiences through support groups or online forums can also provide valuable social support."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "financial assistance",
+            "patterns": ["The cost of treatment for my rare disease is overwhelming", "I don't know how to pay for my medical bills"],
+            "responses": ["The cost of treatment for rare diseases can be significant and burdensome. Have you looked into financial assistance programs and resources, such as patient assistance programs and non-profit organizations?", "Do you have any other symptoms?", "Talking to a financial advisor or healthcare provider about available resources may also be helpful."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "genetic testing",
+            "patterns": ["My condition may be genetic", "I'm considering genetic testing"],
+            "responses": ["Genetic testing can be an important tool in diagnosing and managing rare diseases. Have you talked to your healthcare provider about the benefits and risks of genetic testing?", "Do you have any other symptoms?", "Consulting with a genetic counselor can also provide valuable information about your risk and potential treatment options."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "advocacy",
+            "patterns": ["I want to advocate for rare disease research and funding", "I want to get involved in advocacy efforts"],
+            "responses": ["Advocacy is an important way to raise awareness and increase funding for rare disease research. Have you looked into advocacy groups and organizations, such as the National Organization for Rare Disorders (NORD) or Global Genes?", "Do you have any other symptoms?", "Advocacy efforts can also provide valuable social support and a sense of community."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "research",
+            "patterns": ["I'm interested in learning more about my rare disease", "What research is being done on my condition?"],
+            "responses": ["Research is an important aspect of improving diagnosis, treatment, and management of rare diseases. Have you looked into current research and clinical trials for your condition?", "Do you have any other symptoms?", "Connecting with patient advocacy groups and organizations can provide valuable information about ongoing research and opportunities to get involved."],
+            "context": ["rare diseases"]
+        },
+        {
+            "tag": "confirmation",
+            "patterns": ["I think I'm pregnant", "I missed my period"],
+            "responses": ["The best way to confirm a pregnancy is through a medical test. Have you taken a home pregnancy test or seen a healthcare provider for confirmation?", "Do you have any other symptoms?", "It's important to start prenatal care as soon as possible if you are pregnant."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "prenatal care",
+            "patterns": ["What should I expect during prenatal care?", "When should I start seeing a doctor?"],
+            "responses": ["Prenatal care is an important aspect of a healthy pregnancy. It typically involves regular check-ups with a healthcare provider, including physical exams and screenings. The timing of your first appointment may depend on various factors, such as the timing of your last menstrual cycle. Have you made an appointment with a healthcare provider yet?", "Do you have any concerns or questions?", "Starting prenatal care early can help ensure a healthy pregnancy."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "symptoms",
+            "patterns": ["What are some common symptoms of pregnancy?", "Why am I experiencing morning sickness?"],
+            "responses": ["Common symptoms of pregnancy may include nausea, fatigue, breast tenderness, and changes in appetite. Morning sickness, which is characterized by nausea and vomiting, is a common symptom in the first trimester. Have you been experiencing any of these symptoms?", "Do you have any concerns or questions?", "It's important to talk to your healthcare provider about any symptoms you may be experiencing."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "nutrition",
+            "patterns": ["What should I be eating during pregnancy?", "Can I still exercise while pregnant?"],
+            "responses": ["Nutrition and exercise are important aspects of a healthy pregnancy. Eating a balanced diet that includes plenty of fruits, vegetables, lean proteins, and whole grains is recommended. Exercise can also be beneficial, but it's important to talk to your healthcare provider before starting or continuing an exercise routine. Have you talked to your healthcare provider about a nutrition and exercise plan?", "Do you have any concerns or questions?", "Your healthcare provider can provide personalized recommendations based on your individual needs."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "complications",
+            "patterns": ["Are there any complications I should be aware of during pregnancy?", "How can I reduce my risk for complications?"],
+            "responses": ["Complications during pregnancy can include gestational diabetes, preeclampsia, and preterm labor, among others. Reducing your risk for complications may involve maintaining a healthy lifestyle, attending prenatal appointments regularly, and following your healthcare provider's recommendations. Have you discussed any potential risk factors with your healthcare provider?", "Do you have any concerns or questions?", "It's important to be aware of potential complications and take steps to minimize your risk."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "miscarriage",
+            "patterns": ["What are the signs of a miscarriage?", "How common are miscarriages?"],
+            "responses": ["Miscarriage, or pregnancy loss before 20 weeks, is unfortunately common, affecting up to 20% of known pregnancies. Signs of a miscarriage may include vaginal bleeding, cramping, and the passing of tissue. Have you experienced any of these symptoms?", "Do you have any concerns or questions?", "If you think you may be experiencing a miscarriage, it's important to seek medical attention right away."],
+            "context": ["pregnancy"]
+        },
+        {
+            "tag": "emotions",
+            "patterns": ["Why am I feeling so emotional during pregnancy?", "Is it normal to feel anxious about becoming a parent?"],
+            "responses": ["Pregnancy can be an emotional time, as well as a time of significant life changes and transitions. It's normal to experience a range of emotions, from excitement to anxiety to fear. Have you talked to your healthcare provider or a mental health professional about any emotional concerns?", "Do you have any concerns or questions?", "Seeking support from loved ones and connecting with other expecting parents can also provide valuable social support."],
+            "context": ["pregnancy"]
         }
     ]
 }

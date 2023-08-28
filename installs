@@ -1,0 +1,8 @@
+pip install Flask
+pip install Flask-CORS
+pip install nltk
+python -m nltk.downloader punkt
+python -m nltk.downloader wordnet
+pip install Keras
+pip install numpy
+pip install wikipedia-api
